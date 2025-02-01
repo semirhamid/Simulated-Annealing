@@ -13,6 +13,10 @@ RUN npm install
 # Copy project files
 COPY . .
 
+# Set host to 0.0.0.0
+ENV HOST=0.0.0.0
+ENV PORT=8080
+
 # Expose port 8080
 EXPOSE 8080
 
